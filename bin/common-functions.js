@@ -34,7 +34,7 @@ export const generateArithmeticProgression = () => {
   const base = Math.floor(Math.random() * 101);
   const diff = Math.floor(Math.random() * 50) + 1;
   const progression = [`${base}`];
-  const missingNumberIndex = Math.floor(Math.random() * 11);
+  const missingNumberIndex = Math.floor(Math.random() * 10);
   let i = 1;
   while (i < 10) {
     progression.push(base + diff * i);
