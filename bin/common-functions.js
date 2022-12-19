@@ -16,6 +16,7 @@ export const generateRandom = (itemsArray) => {
   return randomItems.join(' ');
 };
 export const askQuestion = (question, rightAnswer, username) => {
+  console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer:');
   if (rightAnswer === +answer) {
     console.log('Correct!');

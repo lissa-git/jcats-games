@@ -7,7 +7,6 @@ let rightAnswersCount = 0;
 while (rightAnswersCount < 3) {
   const randomExpression = generateRandom(['number', 'sign', 'number']);
   const rightAnswer = eval(randomExpression);
-  console.log(`Question: ${randomExpression}`);
   if (!askQuestion(randomExpression, rightAnswer, name)) {
     break;
   }
