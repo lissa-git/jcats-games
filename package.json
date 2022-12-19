@@ -1,11 +1,11 @@
 {
   "name": "@jcat/code",
   "version": "1.0.0",
-  "description": "",
   "main": "bin/games.js",
   "bin": {
     "games": "bin/games.js",
-    "game-even": "bin/game-even.js"
+    "game-even": "bin/game-even.js",
+    "game-calc": "bin/game-calc.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +23,14 @@
     "eslint": "^8.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lissa-git/jcats-games.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lissa-git/jcats-games/issues"
+  },
+  "homepage": "https://github.com/lissa-git/jcats-games#readme",
+  "description": ""
 }
