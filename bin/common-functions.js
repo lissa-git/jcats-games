@@ -25,3 +25,8 @@ export const askQuestion = (question, rightAnswer, username) => {
   console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${username}!`);
   return 0;
 };
+export const GCD = (x, y) => {
+  if (y > x) return GCD(y, x);
+  if (!y) return `${x}`;
+  return GCD(y, x % y);
+};
