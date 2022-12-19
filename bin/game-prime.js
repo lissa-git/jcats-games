@@ -7,11 +7,7 @@ let rightAnswersCount = 0;
 while (rightAnswersCount < 3) {
   const randomNumber = generateRandom(['number']);
   const rightAnswer = isPrime(randomNumber) ? 'yes' : 'no';
-  if (!askQuestion(randomNumber, rightAnswer, name)) {
-    break;
-  }
+  if (!askQuestion(randomNumber, rightAnswer, name)) break;
   rightAnswersCount += 1;
 }
-if (rightAnswersCount === 3) {
-  console.log(`Congratulations, ${name}!`);
-}
+if (rightAnswersCount === 3) console.log(`Congratulations, ${name}!`);

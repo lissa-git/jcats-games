@@ -7,11 +7,7 @@ let rightAnswersCount = 0;
 while (rightAnswersCount < 3) {
   const randomExpression = generateRandom(['number', 'sign', 'number']);
   const rightAnswer = (eval(randomExpression)).toString();
-  if (!askQuestion(randomExpression, rightAnswer, name)) {
-    break;
-  }
+  if (!askQuestion(randomExpression, rightAnswer, name)) break;
   rightAnswersCount += 1;
 }
-if (rightAnswersCount === 3) {
-  console.log(`Congratulations, ${name}!`);
-}
+if (rightAnswersCount === 3) console.log(`Congratulations, ${name}!`);

@@ -8,11 +8,7 @@ while (rightAnswersCount < 3) {
   const randomNumbers = generateRandom(['number', 'number']);
   const randomNumbersArray = randomNumbers.split(' ');
   const rightAnswer = GCD(randomNumbersArray[0], randomNumbersArray[1]);
-  if (!askQuestion(randomNumbers, rightAnswer, name)) {
-    break;
-  }
+  if (!askQuestion(randomNumbers, rightAnswer, name)) break;
   rightAnswersCount += 1;
 }
-if (rightAnswersCount === 3) {
-  console.log(`Congratulations, ${name}!`);
-}
+if (rightAnswersCount === 3) console.log(`Congratulations, ${name}!`);
