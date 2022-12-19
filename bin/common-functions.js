@@ -10,7 +10,7 @@ export const greetings = () => {
 export const generateRandom = (itemsArray) => {
   const signs = ['+', '-', '*'];
   const randomItems = itemsArray.map((item) => {
-    const newItem = item === 'number' ? Math.floor(Math.random() * 1000) + 1 : signs[Math.floor(Math.random() * 3)];
+    const newItem = item === 'number' ? Math.floor(Math.random() * 1001) : signs[Math.floor(Math.random() * 3)];
     return newItem;
   });
   return randomItems.join(' ');
@@ -29,4 +29,18 @@ export const GCD = (x, y) => {
   if (y > x) return GCD(y, x);
   if (!y) return `${x}`;
   return GCD(y, x % y);
+};
+export const generateArithmeticProgression = () => {
+  const base = Math.floor(Math.random() * 101);
+  const diff = Math.floor(Math.random() * 50) + 1;
+  const progression = [`${base}`];
+  const missingNumberIndex = Math.floor(Math.random() * 11);
+  let i = 1;
+  while (i < 10) {
+    progression.push(base + diff * i);
+    i += 1;
+  }
+  const missingNumber = `${progression[missingNumberIndex]}`;
+  progression[missingNumberIndex] = '...';
+  return [progression.join(' '), missingNumber];
 };
