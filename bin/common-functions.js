@@ -22,7 +22,7 @@ export const askQuestion = (question, rightAnswer, username) => {
     console.log('Correct!');
     return 1;
   }
-  console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${username}!`);
+  console.log(`"${answer}" is wrong answer ;(. Correct answer was "${rightAnswer}".\nLet's try again, ${username}!`);
   return 0;
 };
 export const GCD = (x, y) => {
