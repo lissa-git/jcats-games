@@ -41,7 +41,7 @@ export const generateArithmeticProgression = () => {
     i += 1;
   }
   const missingNumber = `${progression[missingNumberIndex]}`;
-  progression[missingNumberIndex] = '...';
+  progression[missingNumberIndex] = '..';
   return [progression.join(' '), missingNumber];
 };
 export const isPrime = num => {
